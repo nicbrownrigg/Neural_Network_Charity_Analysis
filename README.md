@@ -13,24 +13,25 @@ The purpose of this project was to utilize deep learning through tensor flow, to
 
 - As stated before hand, and model two we removed use case and special considerations, however all three models also removed EIN and name. These are just labels or non-substantial data points that could just add more confusion to our model.
 
-![image](url:)
-
 ### Compiling, Training, and evaluating the model
 
 - For model one, I decided to create for hidden layers, with the first layer having 150 neurons, the second layer having 100 neurons, the third layer having 50 neurons, and the fourth layer having 25 neurons. I believed increasing the amount of neurons in my model, which I did across-the-board for all of my optimizations. The first optimization attempt also had two different activation functions. The first three layers had a tanh function. And the output layer had a sigmoid activation function. I’d be able to create a more accurate result by utilizing the neurons to handle the large amount of information that it needed to process more effectively. In through using different activation functions I thought that would classify the data in a more accurate way since tanh better represents a logistics sigmoid, which would help us better classify our binary target result of successful or not.
 
-![image](url:)
-![image](url:)
+![Op1pic1](url:https://github.com/nicbrownrigg/Neural_Network_Charity_Analysis/blob/main/Op1Pic.png)
+
+![Op1pic2](url:https://github.com/nicbrownrigg/Neural_Network_Charity_Analysis/blob/main/Op1Pic2.png)
 
 - The second model had only two hidden layers with 80 neurons than 40 neurons, are used a RELU and then sigmoid activation function. I also changed the replace value counts to 200 from 600 in the last model. I was trying to see if having less replacements and following a higher neuron, but more closely related to our standard approach for neural networks would remove some errors that would be created from the first model by having too many neurons through overfitting.
 
-![image](url:)
-![image](url:)
+![Op2pic1](url:https://github.com/nicbrownrigg/Neural_Network_Charity_Analysis/blob/main/Op2Pic.png)
+
+![Op2pic2](url:https://github.com/nicbrownrigg/Neural_Network_Charity_Analysis/blob/main/Op2Pic2.png)
 
 - The third optimization brought the replace lists up to replace if <1000. And we ran a simulation similar to the first neural net work but with3  hidden layers that were all tanh activation functions except the last sigmoid function. However I drop the neurons down to 100, 80, and 30. I didn’t see the results I was looking for and the second optimization compared to the first one. Once again worrying about overfitting, I thought that this would produce the best result.
 
-![image](url:)
-![image](url:)
+![Op3pic1](url:https://github.com/nicbrownrigg/Neural_Network_Charity_Analysis/blob/main/Op3Pic.png)
+
+![Op3pic2](url:https://github.com/nicbrownrigg/Neural_Network_Charity_Analysis/blob/main/Op3Pic2.png)
 
 - All three of the simulations failed to break the 75% model accuracy target, however I did see some epochs reach into the low 74% accuracy‘s so I know I was getting there. This is very disappointing and I believe I would need more time to make this model more accurate.
 
